@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  min-height: 98vh;
+}
+
+button, input {
+  border: none;
+  outline: none;
+}

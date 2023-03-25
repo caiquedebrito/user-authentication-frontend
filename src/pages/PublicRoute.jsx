@@ -1,0 +1,14 @@
+
+import { useCookies } from 'react-cookie'
+import { Navigate, useLocation } from 'react-router-dom'
+
+export function PublicRoute({ children }) {
+  const location = useLocation()
+  const [cookies] = useCookies(["user-authentication.token", "user-authentication.refreshToken"])
+
+  if (cookies['user-authentication.token']) {
+    return <Navigate to="/" state={{ from: location }} replace/>
+  }
+
+  return children
+}

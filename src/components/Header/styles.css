@@ -1,0 +1,38 @@
+.header {
+  /* position: fixed; */
+  margin-bottom: 2rem;
+}
+
+.header div {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: black;
+  transition: all .2s ease-in;
+  padding: .4rem .6rem;
+}
+
+nav ul a:hover {
+  color: rgb(86, 86, 86);
+}
+
+nav ul a.active {
+  color: rgb(0, 145, 255);
+  text-decoration: underline;
+}
